@@ -1,0 +1,8 @@
+<form [formGroup]="formGroup">
+	<input 
+    appNumeric
+    formControlName="maskedInput"
+    [textMask]="priceMask">
+</form>
+
+<pre>{{ formGroup.value | json }}</pre>
